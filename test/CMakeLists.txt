@@ -4,6 +4,8 @@ aux_source_directory(../test DIR_TEST)
 set(link_lib glog gtest pthread)
 set(link_math_lib armadillo blas lapack)
 
+include_directories("../include")
+
 aux_source_directory(../source/data DIR_DATA)
 aux_source_directory(../source/ops DIR_OP)
 aux_source_directory(../source/layer DIR_LAYER)
